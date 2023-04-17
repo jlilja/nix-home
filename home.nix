@@ -19,6 +19,9 @@
     spotify # https://www.spotify.com/us/download/linux
     vlc
 
+    # Productivity
+    albert
+
     # Editing
     sublime4
 
