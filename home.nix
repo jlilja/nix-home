@@ -19,8 +19,11 @@
     spotify # https://www.spotify.com/us/download/linux
     vlc
 
+    # Infrastructure
+    terraform
+
     # Productivity
-    albert
+    albert # https://albertlauncher.github.io
 
     # Editing
     sublime4
@@ -36,9 +39,6 @@
   ];
 
   home.file = {};
-
-  programs.starship.enable = true;
-  programs.starship.enableZshIntegration = true;
 
   nixpkgs.config.allowUnfree = true; # Boolean | To allow whether nix should download non free software.
   programs.home-manager.enable = true;
