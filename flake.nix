@@ -10,27 +10,30 @@
     };
   };
 
-  outputs = { ... } @inputs: {
-    # all home configurations stick under this output root
-    homeConfigurations = {
-      # create home configuration for user jonas
-      jonas = inputs.home-manager.lib.homeManagerConfiguration {
-        # import nixpkgs with minimal configuration
-        pkgs = (import inputs.nixpkgs {
-          # allow unfree packages, we're not Richard Stallman
-          config.allowUnfree = true;
-          # set pkgs system to x86 linux. Sadly home-manager
-          # doesn't follow the flake standard of "baseoutput.${system}.username",
-          # it would make it easier to use flake-utils or flake-parts properly.
-          system = "x86_64-linux";
-        });
-        # this passes extra arguments into your modules, useful when you're a nix geek.
-        extraSpecialArgs = { inherit inputs; };
-        # import your modules
-        modules = [
-          ./home.nix
-        ];
+  outputs = { ... } @inputs:
+    let
+      pkgs = (import inputs.nixpkgs {
+        # allow unfree packages, we're not Richard Stallman
+        config.allowUnfree = true;
+        # set pkgs system to x86 linux. Sadly home-manager
+        # doesn't follow the flake standard of "baseoutput.${system}.username",
+        # it would make it easier to use flake-utils or flake-parts properly.
+        system = "x86_64-linux";
+      });
+    in
+    {
+      # all home configurations stick under this output root
+      homeConfigurations = {
+        # create home configuration for user jonas
+        jonas = inputs.home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = { inherit inputs; };
+          # import your modules
+          modules = [
+            ./home.nix
+          ];
+        };
       };
+      formatter."x86_64-linux" = pkgs.nixpkgs-fmt;
     };
-  };
 }
