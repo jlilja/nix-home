@@ -4,9 +4,9 @@ Nix configuration with home manager.
 
 ## New install
 
-1. $ sh <(curl -L https://nixos.org/nix/install)
-2. stepsnix-env --version
-3. mkdir -p ~/.config/nix
+1. `sh <(curl -L https://nixos.org/nix/install)`
+2. `nix-env --version`
+3. `mkdir -p ~/.config/nix`
 4. Enable flakes for nix
 
 ```
