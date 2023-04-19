@@ -3,7 +3,7 @@
 {
   imports = [
     ./firefox.nix
-    ./vim.nix
+    ./neovim.nix
     ./cli.nix
     ./zsh.nix
     ./vscodium.nix
