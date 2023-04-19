@@ -24,6 +24,7 @@
 
     # Productivity
     albert # https://albertlauncher.github.io
+    timeshift # https://github.com/linuxmint/timeshift
 
     # Editing
     sublime4
