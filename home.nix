@@ -37,6 +37,7 @@
     teams-for-linux # Open-Source Teams Electron App (https://github.com/IsmaelMartinez/teams-for-linux)
     slack
     signal-desktop
+    discord
   ];
 
   home.file = {
