@@ -39,7 +39,9 @@
     signal-desktop
   ];
 
-  home.file = {};
+  home.file = {
+    ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
+  };
 
   nixpkgs.config.allowUnfree = true; # Boolean | To allow whether nix should download non free software.
   programs.home-manager.enable = true;
