@@ -1,14 +1,11 @@
 { config, pkgs, ... }:
 
 {
-    programs.vim = {
+    programs.neovim = {
         enable = true;
         defaultEditor = true;
-        plugins = with pkgs.vimPlugins; [ vim-airline ];
-        settings = { ignorecase = true; };
-        extraConfig = ''
-            set mouse=a
-            set number relativenumber
-        '';
+        plugins = with pkgs.vimPlugins; [
+            vim-airline
+        ];
     };
 }
