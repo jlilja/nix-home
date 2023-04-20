@@ -5,5 +5,6 @@
     gping
     htop
     jq
+    fzf
   ];
 }
