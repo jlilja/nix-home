@@ -10,6 +10,8 @@
       theme = "robbyrussell";
     };
 
+    enableAutosuggestions = true;
+
     initExtra = ''
       export NVM_DIR="$HOME/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -18,7 +20,4 @@
       export PATH=/sbin:$PATH
     '';
   };
-
-  programs.starship.enable = true;
-  programs.starship.enableZshIntegration = true;
 }
