@@ -6,5 +6,6 @@
     htop
     jq
     fzf
+    dive
   ];
 }
