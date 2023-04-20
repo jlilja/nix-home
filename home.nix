@@ -6,6 +6,7 @@
     ./neovim.nix
     ./cli.nix
     ./zsh.nix
+    ./starship.nix
     ./vscodium.nix
   ];
 
