@@ -23,6 +23,9 @@
     # Infrastructure
     terraform
 
+    # Programming
+    nodejs-16_x
+
     # Productivity
     albert # https://albertlauncher.github.io
     timeshift # https://github.com/linuxmint/timeshift
