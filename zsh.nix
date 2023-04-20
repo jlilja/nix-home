@@ -10,6 +10,11 @@
       theme = "robbyrussell";
     };
 
+    shellAliases = {
+      fuckdocker = "docker system prune";
+      vim = "nvim";
+    };
+
     enableAutosuggestions = true;
 
     initExtra = ''
