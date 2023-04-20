@@ -36,6 +36,7 @@ Nix configuration with home manager.
 * Nerd fonts
 * 1password
 * Lutris
+* GlobalProtect
 
 ### Setup
 
