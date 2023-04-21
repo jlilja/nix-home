@@ -37,6 +37,8 @@ Nix configuration with home manager.
 * 1password
 * Lutris
 * GlobalProtect
+* aws-cli
+* Blender
 
 ### Setup
 
