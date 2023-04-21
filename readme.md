@@ -39,6 +39,7 @@ Nix configuration with home manager.
 * GlobalProtect
 * aws-cli
 * Blender
+* Postman
 
 ### Setup
 
