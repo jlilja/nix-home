@@ -31,12 +31,12 @@ Nix configuration with home manager.
 
 ### Packages
 
-* Docker
+* Docker - Fedora installer https://docs.docker.com/engine/install/fedora
 * Wine 32 bit prefix
-* Nerd fonts
-* 1password
+* Nerd fonts - https://github.com/ryanoasis/nerd-fonts
+* 1password - https://1password.com/downloads/linux
 * Lutris
-* GlobalProtect
+* GlobalProtect - https://github.com/yuezk/GlobalProtect-openconnect
 * aws-cli
 * Blender
 * Postman
