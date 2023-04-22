@@ -53,7 +53,7 @@
 
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
-  };
+    };
   };
 
   nixpkgs.config.allowUnfree = true; # Boolean | To allow whether nix should download non free software.
