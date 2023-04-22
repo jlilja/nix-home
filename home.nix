@@ -42,6 +42,10 @@
     slack
     signal-desktop
     discord
+
+    (pkgs.writeShellScriptBin "homeflakebuild" ''
+      ${pkgs.home-manager}/bin/home-manager switch --flake ~/.config/home-manager
+    '')
   ];
 
   home.file = {
