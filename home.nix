@@ -5,6 +5,8 @@
     ./firefox.nix
     ./neovim.nix
     ./cli.nix
+    ./git.nix
+    ./ssh.nix
     ./zsh.nix
     ./starship.nix
     ./vscodium.nix
@@ -44,8 +46,14 @@
     discord
   ];
 
-  home.file = {
-    ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
+  home = {
+    file = {
+      ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
+    };
+
+    sessionVariables = {
+      SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
+  };
   };
 
   nixpkgs.config.allowUnfree = true; # Boolean | To allow whether nix should download non free software.
