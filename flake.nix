@@ -21,6 +21,10 @@
         # doesn't follow the flake standard of "baseoutput.${system}.username",
         # it would make it easier to use flake-utils or flake-parts properly.
         system = "x86_64-linux";
+
+        overlays = [
+          inputs.nur.overlay
+        ];
       });
     in
     {
