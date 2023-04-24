@@ -38,6 +38,10 @@
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.unifiedIsOptIn" = false;
         };
+
+        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+          ublock-origin
+        ];
       };
     };
   };

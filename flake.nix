@@ -8,6 +8,8 @@
       # configure home-manager to follow our imported nixpkgs version rather than their own.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nur.url = "github:nix-community/NUR";
   };
 
   outputs = { ... } @inputs:
