@@ -49,6 +49,7 @@
           ublock-origin
           onepassword-password-manager
           multi-account-containers
+          user-agent-string-switcher
         ];
       };
     };
