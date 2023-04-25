@@ -43,6 +43,8 @@
           "toolkit.telemetry.server" = "";
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.unifiedIsOptIn" = false;
+
+          "accessibility.typeaheadfind.enablesound" = false; # I hate this. Turn it off, always.
         };
 
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
