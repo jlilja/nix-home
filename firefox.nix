@@ -23,6 +23,12 @@
 
           "datareporting.policy.dataSubmissionEnabled" = false; # Boolean | This is the data submission master kill switch. (https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html)
 
+          "extensions.pocket.enabled" = false;
+          "extensions.pocket.api" = "";
+          "extensions.pocket.oAuthConsumerKey" = "";
+          "extensions.pocket.showHome" = false;
+          "extensions.pocket.site" = "";
+
           "privacy.annotate_channels.strict_list.enabled" = true; # Boolean | ??
           "privacy.annotate_channels.strict_list.pbmode.enabled" = true; # Boolean | ??
 
@@ -42,6 +48,7 @@
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
           ublock-origin
           onepassword-password-manager
+          multi-account-containers
         ];
       };
     };
