@@ -45,7 +45,7 @@
 
           # import your modules
           modules = [
-            ./home.nix
+            ./jonas/home.nix
           ];
         };
       };

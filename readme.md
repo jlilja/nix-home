@@ -16,7 +16,7 @@ Nix configuration with home manager.
 ```
 
 5. Re-evaluate the session (log out & log in).
-6. Clone this repo in $HOME/.config/home-manager.
+6. Clone this repo in `$HOME/.config/home-manager`.
 7. `home-manager switch --flake .`
 
 ## Commands
@@ -40,6 +40,7 @@ Nix configuration with home manager.
 * aws-cli
 * Blender
 * Postman
+* Ansible
 
 ### Setup
 

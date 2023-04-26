@@ -4,10 +4,9 @@
   imports = [
     ./firefox.nix
     ./neovim.nix
-    ./cli.nix
     ./git.nix
     ./ssh.nix
-    ./zsh.nix
+    ./zsh
     ./starship.nix
     ./vscodium.nix
   ];
@@ -35,9 +34,14 @@
     # Editing
     sublime4
 
-    # CLI related
+    # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
+    gping
+    htop
+    jq
+    fzf # https://github.com/junegunn/fzf
+    dive # https://github.com/wagoodman/dive
 
     # Chat apps
     teams-for-linux # Open-Source Teams Electron App (https://github.com/IsmaelMartinez/teams-for-linux)
