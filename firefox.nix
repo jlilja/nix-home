@@ -23,6 +23,12 @@
 
           "datareporting.policy.dataSubmissionEnabled" = false; # Boolean | This is the data submission master kill switch. (https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/internals/preferences.html)
 
+          "extensions.pocket.enabled" = false;
+          "extensions.pocket.api" = "";
+          "extensions.pocket.oAuthConsumerKey" = "";
+          "extensions.pocket.showHome" = false;
+          "extensions.pocket.site" = "";
+
           "privacy.annotate_channels.strict_list.enabled" = true; # Boolean | ??
           "privacy.annotate_channels.strict_list.pbmode.enabled" = true; # Boolean | ??
 
@@ -37,7 +43,16 @@
           "toolkit.telemetry.server" = "";
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.unifiedIsOptIn" = false;
+
+          "accessibility.typeaheadfind.enablesound" = false; # I hate this. Turn it off, always.
         };
+
+        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+          ublock-origin # https://ublockorigin.com | https://addons.mozilla.org/en-US/firefox/addon/ublock-origin
+          onepassword-password-manager # https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager
+          multi-account-containers # https://github.com/mozilla/multi-account-containers | https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers
+          user-agent-string-switcher # https://github.com/ray-lothian/UserAgent-Switcher | https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher
+        ];
       };
     };
   };

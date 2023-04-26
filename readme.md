@@ -45,6 +45,7 @@ Nix configuration with home manager.
 
 * Updating sudoers file for zsh to patch $PATH.
 * US and SE keyboards with switching through keybindings.
+* Turn off xfce beep `xset b off`.
 
 ## Further reading
 
