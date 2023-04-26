@@ -40,6 +40,7 @@ Nix configuration with home manager.
 * aws-cli
 * Blender
 * Postman
+* Ansible
 
 ### Setup
 
