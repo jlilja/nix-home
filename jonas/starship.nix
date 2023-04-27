@@ -5,5 +5,7 @@
     enable = true;
 
     enableZshIntegration = true;
+
+    settings.sudo.disabled = false;
   };
 }

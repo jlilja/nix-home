@@ -2,6 +2,7 @@
   inputs = {
     # use nixpkgs-unstable as our package repository
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
 
     # use home-manager for configuring our home-environments
     home-manager = {
@@ -9,6 +10,12 @@
 
       # configure home-manager to follow our imported nixpkgs version rather than their own.
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    system-manager = {
+      url = "github:numtide/system-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
     };
 
     nur.url = "github:nix-community/NUR";
@@ -31,10 +38,29 @@
           inputs.nur.overlay
         ];
       });
+
+      jonashome = pkgs: mods:
+        inputs.home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+
+          extraSpecialArgs = {
+            inherit inputs;
+          };
+
+          modules = [ ] ++ mods;
+        };
     in
     {
+      systemConfigs.default = inputs.system-manager.lib.makeSystemConfig {
+        modules = [
+          ./system-manager/default.nix
+        ];
+      };
+
       # all home configurations stick under this output root
       homeConfigurations = {
+        jonas2 = jonashome pkgs [ ./jonas/home.nix ];
+
         # create home configuration for user jonas
         jonas = inputs.home-manager.lib.homeManagerConfiguration {
           inherit pkgs;

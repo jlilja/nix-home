@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -30,6 +30,7 @@
     nodejs-16_x
 
     # Networking
+    # insomnia # opengl issue
     postman
 
     # Productivity
@@ -39,13 +40,17 @@
     # Editing
     sublime4
 
+    # stuff that nix needs.
+    nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
+    inputs.system-manager.packages."x86_64-linux".default
+
     # CLI
     zsh
-    nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
     gping
     htop
     jq
     fzf # https://github.com/junegunn/fzf
+    tealdeer
 
     # Chat apps
     teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
