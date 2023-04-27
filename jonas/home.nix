@@ -46,6 +46,7 @@
     htop
     jq
     fzf # https://github.com/junegunn/fzf
+    tealdeer
 
     # Chat apps
     teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
