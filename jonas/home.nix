@@ -23,9 +23,14 @@
 
     # Infrastructure
     terraform
+    ansible
+    dive # https://github.com/wagoodman/dive
 
     # Programming
     nodejs-16_x
+
+    # Networking
+    postman
 
     # Productivity
     albert # https://albertlauncher.github.io
@@ -41,10 +46,9 @@
     htop
     jq
     fzf # https://github.com/junegunn/fzf
-    dive # https://github.com/wagoodman/dive
 
     # Chat apps
-    teams-for-linux # Open-Source Teams Electron App (https://github.com/IsmaelMartinez/teams-for-linux)
+    teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
     slack
     signal-desktop
     discord
