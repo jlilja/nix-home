@@ -18,6 +18,7 @@
       init.defaultBranch = "main";
       push.default = "matching";
       pull.rebase = true;
+      core.editor = "nvim";
     };
 
     ignores = [

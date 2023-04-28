@@ -39,8 +39,6 @@ Nix configuration with home manager.
 * GlobalProtect - https://github.com/yuezk/GlobalProtect-openconnect
 * aws-cli
 * Blender
-* Postman
-* Ansible
 
 ### Setup
 
