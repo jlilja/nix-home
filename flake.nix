@@ -31,23 +31,25 @@
           inputs.nur.overlay
         ];
       });
-    in
-    {
-      # all home configurations stick under this output root
-      homeConfigurations = {
-        # create home configuration for user jonas
-        jonas = inputs.home-manager.lib.homeManagerConfiguration {
+
+      makeHome = pkgs: modules:
+        inputs.home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
 
           extraSpecialArgs = {
             inherit inputs;
           };
 
-          # import your modules
-          modules = [
-            ./jonas/home.nix
-          ];
+          inherit modules;
         };
+
+      makeHomeWithPackages = makeHome pkgs;
+    in
+    {
+      # all home configurations stick under this output root
+      homeConfigurations = {
+        # create home configuration for user jonas
+        jonas = makeHomeWithPackages [ ./jonas/home.nix ];
       };
 
       formatter."x86_64-linux" = pkgs.nixpkgs-fmt;
