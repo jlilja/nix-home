@@ -49,7 +49,11 @@
       # all home configurations stick under this output root
       homeConfigurations = {
         # create home configuration for user jonas
-        jonas = makeHomeWithPackages [ ./jonas/home.nix ];
+        jonas = makeHomeWithPackages [
+          ./jonas
+          ./jonas/desktop
+          ./jonas/terminal
+          ];
       };
 
       formatter."x86_64-linux" = pkgs.nixpkgs-fmt;
