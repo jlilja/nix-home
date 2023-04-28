@@ -50,7 +50,7 @@
       homeConfigurations = {
         # create home configuration for user jonas
         jonas = makeHomeWithPackages [
-          ./jonas
+          ./default.nix
           ./jonas/desktop
           ./jonas/terminal
           ];
