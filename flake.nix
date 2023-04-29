@@ -46,14 +46,9 @@
       makeHomeWithPackages = makeHome pkgs;
     in
     {
-      # all home configurations stick under this output root
       homeConfigurations = {
-        # create home configuration for user jonas
-        jonas = makeHomeWithPackages [
-          ./jonas
-          ./jonas/desktop
-          ./jonas/terminal
-          ];
+        jonas-desktop = makeHomeWithPackages [./jonas ./jonas/desktop ./jonas/terminal];
+        jonas-server = makeHomeWithPackages [./jonas ./jonas/terminal];
       };
 
       formatter."x86_64-linux" = pkgs.nixpkgs-fmt;

@@ -26,6 +26,9 @@
     slack
     signal-desktop
     discord
+
+    # Security
+    yubikey-manager
   ];
 
   home = {

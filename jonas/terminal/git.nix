@@ -12,6 +12,10 @@
       signByDefault = true;
     };
 
+    aliases = {
+        lol = "log --graph --decorate --oneline --abbrev-commit";
+    };
+
     extraConfig = {
       commit.gpgsign = true;
       gpg.format = "ssh";
