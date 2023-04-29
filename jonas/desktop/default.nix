@@ -4,6 +4,7 @@
   imports = [
     ./firefox.nix
     ./vscodium.nix
+    ./rofi.nix
   ];
 
   home.packages = with pkgs; [
@@ -15,7 +16,6 @@
     postman
 
     # Productivity
-    albert # https://albertlauncher.github.io
     timeshift # https://github.com/linuxmint/timeshift
 
     # Editing
@@ -32,9 +32,9 @@
   ];
 
   home = {
-    file = {
-      ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
-    };
+    # file = {
+    #   ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
+    # };
 
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
