@@ -32,10 +32,6 @@
   ];
 
   home = {
-    # file = {
-    #   ".config/autostart/albert.desktop".source = "${pkgs.albert}/share/applications/albert.desktop";
-    # };
-
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
     };
