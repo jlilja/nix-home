@@ -13,7 +13,7 @@
     };
 
     aliases = {
-        lol = "log --graph --decorate --oneline --abbrev-commit";
+      lol = "log --graph --decorate --oneline --abbrev-commit";
     };
 
     extraConfig = {
