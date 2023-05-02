@@ -33,4 +33,7 @@
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
     };
   };
+
+  # This one will magically let rofi know of good XDG paths where applications live.
+  targets.genericLinux.enable = true; # Boolean | https://rycee.gitlab.io/home-manager/options.html#opt-targets.genericLinux.enable
 }

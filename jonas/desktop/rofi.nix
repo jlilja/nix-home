@@ -5,7 +5,7 @@
     enable = true;
 
     extraConfig = {
-      modi = "run,filebrowser,window";
+      modi = "run,drun";
     };
   };
 }
