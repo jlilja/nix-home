@@ -47,8 +47,8 @@
     in
     {
       homeConfigurations = {
-        jonas-desktop = makeHomeWithPackages [./jonas ./jonas/desktop ./jonas/terminal];
-        jonas-server = makeHomeWithPackages [./jonas ./jonas/terminal];
+        jonas-desktop = makeHomeWithPackages [ ./jonas ./jonas/desktop ./jonas/terminal ];
+        jonas-server = makeHomeWithPackages [ ./jonas ./jonas/terminal ];
       };
 
       formatter."x86_64-linux" = pkgs.nixpkgs-fmt;
