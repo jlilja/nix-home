@@ -12,6 +12,7 @@
   home.packages = with pkgs; [
     # Infrastructure
     terraform
+    terragrunt
     ansible
     dive # https://github.com/wagoodman/dive
 
