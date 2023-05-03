@@ -18,6 +18,7 @@
 
     # Programming
     nodejs-16_x
+    go
 
     # CLI
     zsh
