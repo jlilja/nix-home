@@ -5,7 +5,6 @@
 	background-color: @bg;
 }
 
-
 configuration {
 	show-icons: true;
     icon-theme: "Papirus";
@@ -24,7 +23,6 @@ window {
 mainbox {
 	children: [inputbar, listview];
 }
-
 
 // ELEMENT
 // -----------------------------------
@@ -74,5 +72,3 @@ prompt {
 	padding: 10 6 0 10;
 	margin: 0 -2 0 0;
 }
-
-
