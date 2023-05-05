@@ -4,10 +4,8 @@
   programs.rofi = {
     enable = true;
 
-    extraConfig = {
-      modi = "drun";
-    };
-
+    terminal = "/usr/bin/xfce4-terminal";
+    extraConfig.modi = "drun";
     theme = ./theme.rafi;
   };
 }
