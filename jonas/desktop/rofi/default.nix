@@ -5,7 +5,9 @@
     enable = true;
 
     extraConfig = {
-      modi = "run,drun";
+      modi = "drun";
     };
+
+    theme = ./theme.rafi;
   };
 }

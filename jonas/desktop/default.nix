@@ -4,7 +4,7 @@
   imports = [
     ./firefox.nix
     ./vscodium.nix
-    ./rofi.nix
+    ./rofi
   ];
 
   home.packages = with pkgs; [
@@ -22,10 +22,10 @@
     sublime4
 
     # Chat apps
-    teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
-    slack
-    signal-desktop
     discord
+    signal-desktop
+    slack
+    teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
   ];
 
   home = {
