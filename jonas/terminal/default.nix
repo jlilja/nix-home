@@ -15,6 +15,7 @@
     terragrunt
     ansible
     dive # https://github.com/wagoodman/dive
+    trivy # https://github.com/aquasecurity/trivy
 
     # Programming
     nodejs-16_x
@@ -28,5 +29,7 @@
     jq
     fzf # https://github.com/junegunn/fzf
     tealdeer
+    screenkey # https://gitlab.com/screenkey/screenkey
+    neofetch
   ];
 }
