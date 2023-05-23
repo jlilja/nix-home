@@ -17,6 +17,7 @@
 
     # Productivity
     timeshift # https://github.com/linuxmint/timeshift
+    hugo
 
     # Editing
     sublime4
