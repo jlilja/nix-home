@@ -31,5 +31,6 @@
     tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
+    awscli2
   ];
 }
