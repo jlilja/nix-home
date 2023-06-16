@@ -27,7 +27,7 @@
     gping
     htop
     jq
-    yq
+    yq-go
     fzf # https://github.com/junegunn/fzf
     tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
