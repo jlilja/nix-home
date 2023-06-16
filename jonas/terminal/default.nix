@@ -27,8 +27,9 @@
     gping
     htop
     jq
+    yq
     fzf # https://github.com/junegunn/fzf
-    tealdeer
+    tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
     awscli2
