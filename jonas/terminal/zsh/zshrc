@@ -1,5 +1,3 @@
 export PATH=/sbin:$PATH
 
 xset b off # Fix for disabling thinkpad system bell on each new session.
-
-export XDG_DATA_DIRS="/home/jonas/.nix-profile/share:$XDG_DATA_DIRS"
