@@ -14,6 +14,7 @@
     terraform
     terragrunt
     ansible
+    packer
     dive # https://github.com/wagoodman/dive
     trivy # https://github.com/aquasecurity/trivy
 
@@ -27,9 +28,11 @@
     gping
     htop
     jq
+    yq-go
     fzf # https://github.com/junegunn/fzf
-    tealdeer
+    tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
+    awscli2
   ];
 }
