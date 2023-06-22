@@ -36,38 +36,39 @@
   };
 
   xdg = {
-    mimeApps = {
-      enable = true;
-      associations.added = {
-        "application/x-extension-htm" = "firefox.desktop";
-        "application/x-extension-html" = "firefox.desktop";
-        "application/x-extension-shtml" = "firefox.desktop";
-        "application/x-extension-xht" = "firefox.desktop";
-        "application/x-extension-xhtml" = "firefox.desktop";
-        "application/xhtml+xml" = "firefox.desktop";
-        "text/html" = "firefox.desktop";
-        "x-scheme-handler/chrome" = "firefox.desktop";
-        "x-scheme-handler/http" = "firefox.desktop";
-        "x-scheme-handler/https" = "firefox.desktop";
+    # HM doesn't own session until after xfce manages it, so it will write its own mimetype file and cause a conflict.
+    # mimeApps = {
+    #   enable = true;
+    #   associations.added = {
+    #     "application/x-extension-htm" = "firefox.desktop";
+    #     "application/x-extension-html" = "firefox.desktop";
+    #     "application/x-extension-shtml" = "firefox.desktop";
+    #     "application/x-extension-xht" = "firefox.desktop";
+    #     "application/x-extension-xhtml" = "firefox.desktop";
+    #     "application/xhtml+xml" = "firefox.desktop";
+    #     "text/html" = "firefox.desktop";
+    #     "x-scheme-handler/chrome" = "firefox.desktop";
+    #     "x-scheme-handler/http" = "firefox.desktop";
+    #     "x-scheme-handler/https" = "firefox.desktop";
 
-        "application/javascript" = "codium.desktop";
-      };
+    #     "application/javascript" = "codium.desktop";
+    #   };
 
-      defaultApplications = {
-        "application/x-extension-htm" = "firefox.desktop";
-        "application/x-extension-html" = "firefox.desktop";
-        "application/x-extension-shtml" = "firefox.desktop";
-        "application/x-extension-xht" = "firefox.desktop";
-        "application/x-extension-xhtml" = "firefox.desktop";
-        "application/xhtml+xml" = "firefox.desktop";
-        "text/html" = "firefox.desktop";
-        "x-scheme-handler/chrome" = "firefox.desktop";
-        "x-scheme-handler/http" = "firefox.desktop";
-        "x-scheme-handler/https" = "firefox.desktop";
+    #   defaultApplications = {
+    #     "application/x-extension-htm" = "firefox.desktop";
+    #     "application/x-extension-html" = "firefox.desktop";
+    #     "application/x-extension-shtml" = "firefox.desktop";
+    #     "application/x-extension-xht" = "firefox.desktop";
+    #     "application/x-extension-xhtml" = "firefox.desktop";
+    #     "application/xhtml+xml" = "firefox.desktop";
+    #     "text/html" = "firefox.desktop";
+    #     "x-scheme-handler/chrome" = "firefox.desktop";
+    #     "x-scheme-handler/http" = "firefox.desktop";
+    #     "x-scheme-handler/https" = "firefox.desktop";
 
-        "application/javascript" = "codium.desktop";
-      };
-    };
+    #     "application/javascript" = "codium.desktop";
+    #   };
+    # };
   };
 
   # This one will magically let rofi know of good XDG paths where applications live.

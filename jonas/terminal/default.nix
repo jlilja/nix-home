@@ -14,6 +14,7 @@
     terraform
     terragrunt
     ansible
+    packer
     dive # https://github.com/wagoodman/dive
     trivy # https://github.com/aquasecurity/trivy
 
