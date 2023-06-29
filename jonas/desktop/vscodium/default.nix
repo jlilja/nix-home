@@ -13,5 +13,9 @@
         trimTrailingWhitespace = true;
       };
     };
+
+    extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace (
+      builtins.fromJSON (builtins.readFile ./extensions.json)
+    );
   };
 }
