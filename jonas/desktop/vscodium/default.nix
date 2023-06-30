@@ -12,10 +12,19 @@
         insertFinalNewline = true;
         trimTrailingWhitespace = true;
       };
+
+      editor = {
+        mouseWheelZoom = true;
+      };
     };
 
-    extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace (
-      builtins.fromJSON (builtins.readFile ./extensions.json)
-    );
+    # Setting this to true until I fully manage it through a json/yaml file.
+    mutableExtensionsDir = true;
+
+    extensions = with pkgs.vscode-extensions; [
+      eamodio.gitlens
+      bbenoist.nix
+      hashicorp.terraform
+    ];
   };
 }

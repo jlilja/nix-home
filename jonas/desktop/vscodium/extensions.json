@@ -1,8 +1,14 @@
 [
     {
-        "name": "gitlens",
-        "publisher": "eamodio",
-        "version": "2023.6.2705",
-        "sha256": "1r5m9ggzsfc0amdqdfim2mcs61xxfy5sl9428y8jcyzxh558lwm7"
+        "name": "ansible",
+        "publisher": "redhat",
+        "version": "2.4.78",
+        "sha256": "1xcja7ncgav1nmycmfm6jwh6r86wpjz7jzxab4yddbhk1cl51djz"
+    },
+    {
+        "name": "terraform",
+        "publisher": "HashiCorp",
+        "version": "2.27.2023062109",
+        "sha256": "1nb6vz2a6sh32mx1cc1hq61gfvgq632rbki7i3swj2f9jmzn1j85"
     }
 ]
