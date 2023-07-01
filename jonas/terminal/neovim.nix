@@ -6,7 +6,14 @@
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
       vim-airline
-      nerdtree
     ];
+
+    extraConfig = ''
+      set mouse=
+      set number
+      set encoding=utf-8
+      set ignorecase
+      set smartcase
+    '';
   };
 }
