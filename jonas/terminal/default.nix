@@ -38,4 +38,4 @@
     neofetch
     awscli2
   ];
-        }
+}

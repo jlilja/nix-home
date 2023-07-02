@@ -35,9 +35,7 @@
       };
     };
 
-
-    # Setting this to true until I fully manage it through a json/yaml file.
-    mutableExtensionsDir = true;
+    mutableExtensionsDir = false;
 
     extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace (
       builtins.fromJSON (
