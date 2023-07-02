@@ -16,7 +16,25 @@
       editor = {
         mouseWheelZoom = true;
       };
+
+      vim = {
+        enableNeovim = true;
+        neovimPath = "${pkgs.neovim}/bin/nvim";
+      };
+
+      terraform = {
+        languageServer = {
+          path = "${pkgs.terraform-ls}/bin/terraform-ls";
+        };
+      };
+
+      ansible = {
+        ansible = {
+          path = "${pkgs.ansible}/bin/ansible";
+        };
+      };
     };
+
 
     # Setting this to true until I fully manage it through a json/yaml file.
     mutableExtensionsDir = true;
