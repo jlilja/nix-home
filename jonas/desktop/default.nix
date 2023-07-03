@@ -3,7 +3,7 @@
 {
   imports = [
     ./firefox.nix
-    ./vscodium.nix
+    ./vscodium
     ./rofi
   ];
 

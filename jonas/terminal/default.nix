@@ -22,13 +22,16 @@
     nodejs-16_x
     go
 
+    # Utilities
+    go-task
+    jq
+    yq-go
+
     # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
     gping
     htop
-    jq
-    yq-go
     fzf # https://github.com/junegunn/fzf
     tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey

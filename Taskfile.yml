@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+
+  hm:
+    cmds:
+      - home-manager switch --flake .#jonas-desktop
