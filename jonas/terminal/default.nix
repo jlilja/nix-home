@@ -26,6 +26,7 @@
     go-task
     jq
     yq-go
+    yamllint
 
     # CLI
     zsh
@@ -37,5 +38,7 @@
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
     awscli2
+
+    yt-dlp
   ];
 }
