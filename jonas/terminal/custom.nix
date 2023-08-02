@@ -2,6 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    (writeShellScriptBin "longifyurl" (builtins.readFile ../../scripts/longify_url.sh))
+    (writeShellScriptBin "longifyurl" (builtins.readFile ../scripts/longify_url.sh))
   ];
 }
