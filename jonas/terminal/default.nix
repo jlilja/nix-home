@@ -7,6 +7,7 @@
     ./ssh.nix
     ./zsh
     ./starship.nix
+    ./custom.nix
   ];
 
   home.packages = with pkgs; [
@@ -39,7 +40,5 @@
     awscli2
 
     yt-dlp
-
-    (pkgs.writeShellScriptBin "longifyurl" (builtins.readFile ../../scripts/longify_url.sh))
   ];
 }
