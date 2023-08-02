@@ -3,7 +3,3 @@
 export PATH=/sbin:$PATH
 
 xset b off # Fix for disabling thinkpad system bell on each new session.
-
-function longifyurl {
-    curl -ILs $1 | grep -i '^location'
-}
