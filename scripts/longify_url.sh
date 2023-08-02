@@ -14,9 +14,9 @@
 #
 #   Displaying in chronological order (first redirect to final url)
 #
-#   Starts at:	    bit.ly/amtrak-valentines
-#   Redirects to:	https://www.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/
-#   Redirects to:	https://eu.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/
+#   Starts at:      bit.ly/amtrak-valentines
+#   Redirects to:   https://www.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/
+#   Redirects to:   https://eu.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/
 #
 
 url=$1
