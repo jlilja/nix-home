@@ -6,11 +6,11 @@
 # save each site's location header. Once it has followed all redirects it will print the path(s) it has
 # followed.
 #
-# example usage:
+# Example usage:
 #
 #   ./longify_url bit.ly/amtrak-valentines
 #
-# example response:
+# Example response:
 #
 #   Displaying in chronological order (first redirect to final url)
 #
