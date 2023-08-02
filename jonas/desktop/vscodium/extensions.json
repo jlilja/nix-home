@@ -26,8 +26,8 @@
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2023.11.11781018",
-        "sha256": "17r1ylksi02h8nd0wwm29y24zm195xgb54m3pap8vszvl35azxqm"
+        "version": "2023.13.12061012",
+        "sha256": "sha256-JbAZaeQShRuO6OqVpdmbjNsv8A3gYSDMAWgbu+qpmqY="
     },
     {
         "name": "vim",

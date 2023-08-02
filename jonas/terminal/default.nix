@@ -26,16 +26,20 @@
     go-task
     jq
     yq-go
+    yamllint
 
     # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
     gping
     htop
-    fzf # https://github.com/junegunn/fzf
     tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
     awscli2
+
+    yt-dlp
+
+    (pkgs.writeShellScriptBin "longifyurl" (builtins.readFile ../../scripts/longify_url.sh))
   ];
 }
