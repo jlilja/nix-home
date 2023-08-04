@@ -1,14 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
-# This script will accept an url which could be masquerading its final url by a link shortner (e.g bit.ly) service
-# or being redirected (301, 307, or 308). It will make a curl request and folloy any redirect(s) and
-# save each site's location header. Once it has followed all redirects it will print the path(s) it has
-# followed.
+# Longify url - reveal the location of a link that has been shortened.
+#
+# Description:
+#
+#   This script will accept an url which could be masquerading its final url by a link shortner (e.g bit.ly) service
+#   or being redirected (301, 307, or 308). It will make a curl request and folloy any redirect(s) and
+#   save each site's location header. Once it has followed all redirects it will print the path(s) it has
+#   followed.
 #
 # Example usage:
 #
-#   ./longify_url bit.ly/amtrak-valentines
+#   ./longify_url <url>
 #
 # Example response:
 #
@@ -19,11 +23,21 @@
 #   Redirects to:   https://eu.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/
 #
 
+if [[ ( $@ == "--help") ||  $@ == "-h" ]]; then
+	echo "Usage: $0 <url>"
+	exit 0
+fi
+
+if [[ -z $1 ]]; then
+	echo "Usage: $0 [arguments]"
+	exit 0
+fi
+
 url=$1
 
 # Make curl request and grab the location header of each redirect and final url.
 # Then removes the location header and just leaves the values.
-locations=$(curl -ILs $url | grep -i '^location' | cut -d' ' -f2)
+locations=$(curl --head --location --silent $url | grep --ignore-case '^location' | cut --delimiter=' ' --fields=2)
 
 echo -e "\nDisplaying in chronological order (first redirect to final url)\n"
 
