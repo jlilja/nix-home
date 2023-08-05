@@ -33,6 +33,13 @@ if [[ -z $1 ]]; then
 	exit 0
 fi
 
+# Catch case if argument does not validate a regular looking url.
+is_url_regex="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$"
+if [[ ! $1 =~ $is_url_regex ]]; then
+    echo "The <url> is not a valid url."
+    exit 0
+fi
+
 url=$1
 
 # Make curl request and grab the location header of each redirect and final url.
