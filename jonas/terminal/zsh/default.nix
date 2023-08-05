@@ -17,7 +17,7 @@
 
     enableAutosuggestions = true;
 
-    initExtra = builtins.readFile ./zshrc.sh;
+    initExtra = builtins.readFile ./zshrc;
   };
 
   # https://github.com/junegunn/fzf
