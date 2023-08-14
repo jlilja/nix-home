@@ -18,7 +18,12 @@
     let
       pkgs = (import inputs.nixpkgs {
         # allow unfree packages, we're not Richard Stallman
-        config.allowUnfree = true;
+        config = {
+          allowUnfree = true;
+          permittedInsecurePackages = [
+            "openssl-1.1.1v"
+          ];
+        };
 
         # set pkgs system to x86 linux. Sadly home-manager
         # doesn't follow the flake standard of "baseoutput.${system}.username",
