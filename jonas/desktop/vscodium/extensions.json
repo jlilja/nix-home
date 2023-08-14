@@ -1,5 +1,11 @@
 [
     {
+        "name": "vscode-yaml",
+        "publisher": "redhat",
+        "version": "1.14.0",
+        "sha256": "sha256-hCRyDA6oZF7hJv0YmbNG3S2XPtNbyxX1j3qL1ixOnF8="
+    },
+    {
         "name": "ansible",
         "publisher": "redhat",
         "version": "2.4.78",
@@ -20,8 +26,8 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2023.6.1705",
-        "sha256": "sha256-1xAJho9uBkVUrhtu5mV27UeIKhrmYoZ7kEFSNsQTSlI="
+        "version": "2023.8.1205",
+        "sha256": "sha256-o2OZtUsOLniwW1tg5Dhos972gA5Icd0MEUGl4kZX5Us="
     },
     {
         "name": "python",

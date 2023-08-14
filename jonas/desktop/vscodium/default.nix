@@ -17,6 +17,17 @@
         mouseWheelZoom = true;
       };
 
+      extensions = {
+        autoCheckUpdates = false;
+        autoUpdate = false;
+      };
+
+      redhat = {
+        telemetry.enabled = false;
+      };
+
+      "[yaml]"."editor.defaultFormatter" = "redhat.vscode-yaml";
+
       vim = {
         enableNeovim = true;
         neovimPath = "${pkgs.neovim}/bin/nvim";

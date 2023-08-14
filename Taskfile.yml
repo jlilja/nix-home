@@ -1,7 +1,11 @@
-version: '3'
+version: "3"
 
 tasks:
 
-  hm:
+  hm-switch:
     cmds:
       - home-manager switch --flake .#jonas-desktop
+
+  flake-update:
+    cmds:
+      - nix flake update
