@@ -18,6 +18,7 @@
     packer
     dive # https://github.com/wagoodman/dive
     trivy # https://github.com/aquasecurity/trivy
+    kubectl
 
     # Programming
     nodejs-16_x
@@ -28,6 +29,7 @@
     jq
     yq-go
     yamllint
+    git-open
 
     # CLI
     zsh

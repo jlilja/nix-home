@@ -22,6 +22,7 @@
           allowUnfree = true;
           permittedInsecurePackages = [
             "openssl-1.1.1v"
+            "nodejs-16.20.2"
           ];
         };
 
