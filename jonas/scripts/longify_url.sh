@@ -51,7 +51,5 @@ echo -e "\nDisplaying in chronological order (first redirect to final url)\n"
 printf "Starts at:\t%s\n" $url
 
 for location in $locations ; do
-    # printf, for some reason, does not handle format specifiers + argument for the locations list.
-    # Using regular echo instead. It does what it needs to do anyways.
-    echo -e "Redirects to:\t$location"
+    printf "Redirects to:\t%s\n" $location
 done
