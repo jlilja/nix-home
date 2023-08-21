@@ -31,6 +31,9 @@
     yamllint
     git-open
 
+    # Virtualisation
+    qemu
+
     # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
