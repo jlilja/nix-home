@@ -9,3 +9,7 @@ tasks:
   flake-update:
     cmds:
       - nix flake update
+
+  flake-update-branch:
+    cmds:
+      - git checkout -b feature/update-flakes-$(date +"%d%m%y")
