@@ -18,6 +18,12 @@
         "sha256": "1nb6vz2a6sh32mx1cc1hq61gfvgq632rbki7i3swj2f9jmzn1j85"
     },
     {
+        "name": "hcl",
+        "publisher": "HashiCorp",
+        "version": "0.3.2",
+        "sha256": "sha256-cxF3knYY29PvT3rkRS8SGxMn9vzt56wwBXpk2PqO0mo="
+    },
+    {
         "name": "nix",
         "publisher": "bbenoist",
         "version": "1.0.1",

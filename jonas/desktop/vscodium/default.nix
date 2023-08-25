@@ -13,37 +13,26 @@
         trimTrailingWhitespace = true;
       };
 
-      editor = {
-        mouseWheelZoom = true;
-      };
+      editor.mouseWheelZoom = true;
 
       extensions = {
         autoCheckUpdates = false;
         autoUpdate = false;
       };
 
-      redhat = {
-        telemetry.enabled = false;
-      };
+      telemetry.telemetryLevel = "off";
+      redhat.telemetry.enabled = false;
+      gitlens.telemetry.enabled = false;
 
-      "[yaml]"."editor.defaultFormatter" = "redhat.vscode-yaml";
+      "[yaml]".editor.defaultFormatter = "redhat.vscode-yaml";
 
       vim = {
         enableNeovim = true;
         neovimPath = "${pkgs.neovim}/bin/nvim";
       };
 
-      terraform = {
-        languageServer = {
-          path = "${pkgs.terraform-ls}/bin/terraform-ls";
-        };
-      };
-
-      ansible = {
-        ansible = {
-          path = "${pkgs.ansible}/bin/ansible";
-        };
-      };
+      terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";
+      ansible.ansible.path = "${pkgs.ansible}/bin/ansible";
     };
 
     mutableExtensionsDir = false;
