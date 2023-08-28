@@ -35,6 +35,12 @@
     };
   };
 
+  file.".config/sublime-text/Packages/User/Preferences.sublime-settings" = {
+  #   text = builtins.toJSON {
+  #     "scroll_past_end" = false;
+  #   };
+  };
+
   # This one will magically let rofi know of good XDG paths where applications live.
   targets.genericLinux.enable = true; # Boolean | https://rycee.gitlab.io/home-manager/options.html#opt-targets.genericLinux.enable
 }
