@@ -45,6 +45,9 @@
           "toolkit.telemetry.unifiedIsOptIn" = false;
 
           "accessibility.typeaheadfind.enablesound" = false; # I hate this. Turn it off, always.
+
+          "browser.uitour.enabled" = false;
+          "browser.tabs.firefox-view" = false;
         };
 
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
