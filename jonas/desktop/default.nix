@@ -33,6 +33,13 @@
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
     };
+
+    # TODO: Put this in its own file someday along with defined sublime text packages (like https://github.com/dzhibas/SublimePrettyJson)
+    file.".config/sublime-text/Packages/User/Preferences.sublime-settings" = {
+      text = builtins.toJSON {
+        "scroll_past_end" = true;
+      };
+    };
   };
 
   # This one will magically let rofi know of good XDG paths where applications live.
