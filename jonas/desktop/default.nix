@@ -26,6 +26,7 @@
     discord
     signal-desktop
     slack
+    telegram-desktop
     teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
   ];
 
