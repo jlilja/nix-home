@@ -13,3 +13,7 @@ tasks:
   flake-update-branch:
     cmds:
       - git checkout -b feature/update-flakes-$(date +"%d%m%y")
+
+  get-vscode-extension-updates:
+    cmds:
+      - ./vscode_updater.py
