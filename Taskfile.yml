@@ -17,3 +17,7 @@ tasks:
   get-vscode-extension-updates:
     cmds:
       - ./vscode_updater.py
+
+  format:
+    cmds:
+      - nix fmt

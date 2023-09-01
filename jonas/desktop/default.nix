@@ -5,6 +5,7 @@
     ./firefox.nix
     ./vscodium
     ./rofi
+    ./sublimetext.nix
   ];
 
   home.packages = with pkgs; [
@@ -19,9 +20,6 @@
     timeshift # https://github.com/linuxmint/timeshift
     hugo
 
-    # Editing
-    sublime4
-
     # Chat apps
     discord
     signal-desktop
@@ -33,13 +31,6 @@
   home = {
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
-    };
-
-    # TODO: Put this in its own file someday along with defined sublime text packages (like https://github.com/dzhibas/SublimePrettyJson)
-    file.".config/sublime-text/Packages/User/Preferences.sublime-settings" = {
-      text = builtins.toJSON {
-        "scroll_past_end" = true;
-      };
     };
   };
 
