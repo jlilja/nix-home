@@ -38,8 +38,8 @@
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2023.15.12421005",
-        "sha256": "sha256-Hpsuw8hNlMTbG+uqchVpdmgvlLNMWjfysqUwx4/Z25M="
+        "version": "2023.15.12431009",
+        "sha256": "sha256-jTWLH83m2Uz3QPuVetZ9pPqfx6Hhd+gdLhy9t2nYrCc="
     },
     {
         "name": "vim",
