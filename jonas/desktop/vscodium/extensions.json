@@ -32,19 +32,19 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2023.8.3005",
-        "sha256": "sha256-kKilF+MkrY8LQI3GVT0BmqMfmbZeHAxrrbYbDIviiMw="
+        "version": "2023.9.1405",
+        "sha256": "sha256-mkMD0GTiyGUh4nAel0d8UmFsqAIWNOX+oOyNJuyBYEs="
     },
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2023.15.12431009",
-        "sha256": "sha256-jTWLH83m2Uz3QPuVetZ9pPqfx6Hhd+gdLhy9t2nYrCc="
+        "version": "2023.17.12561009",
+        "sha256": "sha256-nNRSmKG3YHBX7m7et4ozeze+lhZBcoPjPAOogSIsgjk="
     },
     {
         "name": "vim",
         "publisher": "vscodevim",
-        "version": "1.25.2",
-        "sha256": "sha256-hy2Ks6oRc9io6vfgql9aFGjUiRzBCS4mGdDO3NqIFEg="
+        "version": "1.26.0",
+        "sha256": "sha256-XPD8Rr6yy8rWieup8+sOWaz4fxAkhzsrNhMv+Twqq0M="
     }
 ]
