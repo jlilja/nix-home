@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-     (writeShellScriptBin "blender" ''
+    (writeShellScriptBin "blender" ''
       ${nixgl.nixGLIntel}/bin/nixGLIntel ${blender}/bin/blender
     '')
 
