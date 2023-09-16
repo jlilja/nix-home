@@ -6,6 +6,7 @@
     ./vscodium
     ./rofi
     ./sublimetext.nix
+    ./custom.nix
   ];
 
   home.packages = with pkgs; [
