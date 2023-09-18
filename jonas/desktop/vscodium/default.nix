@@ -28,7 +28,11 @@
 
       vim = {
         enableNeovim = true;
+        useSystemClipboard = true;
         neovimPath = "${pkgs.neovim}/bin/nvim";
+        ignorecase = true;
+        hlsearch = true;
+        useCtrlKeys = false;
       };
 
       terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";

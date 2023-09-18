@@ -56,7 +56,7 @@
     in
     {
       homeConfigurations = {
-        jonas-desktop = makeHomeWithPackages [ ./jonas ./jonas/desktop ./jonas/terminal ];
+        jonas = makeHomeWithPackages [ ./jonas ./jonas/desktop ./jonas/terminal ];
         jonas-server = makeHomeWithPackages [ ./jonas ./jonas/terminal ];
       };
 
