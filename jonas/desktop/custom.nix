@@ -7,8 +7,8 @@
     '')
 
 
-    (writeShellScriptBin "globalprotect" ''
-      ${nixgl.nixGLIntel}/bin/nixGLIntel ${globalprotect-openconnect}/bin/gpclient
-    '')
+    # (writeShellScriptBin "globalprotect" ''
+    #   ${nixgl.nixGLIntel}/bin/nixGLIntel ${globalprotect-openconnect}/bin/gpclient
+    # '')
   ];
 }
