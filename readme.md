@@ -42,3 +42,4 @@ Nix configuration with home manager.
 * [OpenGl fixes for non-nixos installations](https://pmiddend.github.io/posts/nixgl-on-ubuntu)
     * [NixGL](https://github.com/guibou/nixGL)
 * [Flakes usage in HM](https://dee.underscore.world/blog/home-manager-flakes)
+
