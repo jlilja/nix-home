@@ -54,6 +54,7 @@ def get_updates(extensions):
             }
         }, versions))
 
+        # TODO: Create option to only list extensions with available updates.
         print(get_condensed_version[0])
 
 

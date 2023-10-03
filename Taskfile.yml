@@ -10,15 +10,15 @@ tasks:
     cmds:
       - nix flake update
 
-  flake-update-branch:
+  create-flake-update-branch:
     cmds:
       - git checkout -b feature/update-flakes-$(date +"%d%m%y")
 
-  flake-update-push:
+  create-flake-update-pr:
     cmds:
       - gh pr create --title "Flake lock file updates" --body "Regular maintenence updates in order to keep packages up to date." --label "flake-update"
 
-  get-vscode-extension-updates:
+  list-vscode-extension-updates:
     cmds:
       - ./vscode_updater.py
 

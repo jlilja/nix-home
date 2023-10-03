@@ -14,8 +14,8 @@
     {
         "name": "terraform",
         "publisher": "HashiCorp",
-        "version": "2.27.2023071109",
-        "sha256": "sha256-RXQZu0J4UJwFl1e00cWNX5PeorfOXQ1AO+xmtQUmoxg="
+        "version": "2.28.2023091812",
+        "sha256": "sha256-iauCkG1RG4cvuJfSjeEK0lUXNpeI68mTa+StgJaBu0Q="
     },
     {
         "name": "hcl",
@@ -32,14 +32,14 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2023.9.1405",
-        "sha256": "sha256-mkMD0GTiyGUh4nAel0d8UmFsqAIWNOX+oOyNJuyBYEs="
+        "version": "2023.10.216",
+        "sha256": "sha256-Wb65FcTfj4RCd0CckkmI+HdLVDlmok2Iu+tAIn/tfGk="
     },
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2023.17.12561009",
-        "sha256": "sha256-nNRSmKG3YHBX7m7et4ozeze+lhZBcoPjPAOogSIsgjk="
+        "version": "2023.17.12751008",
+        "sha256": "sha256-R9M+CoNUoWKYqy+3XE7GkjEIYKcut7VQQd/XYt22dik="
     },
     {
         "name": "vim",
