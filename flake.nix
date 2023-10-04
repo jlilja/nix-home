@@ -11,7 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixGL.url = "github:guibou/nixGL";
+    nixGL = {
+      url = "github:guibou/nixGL";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nur.url = "github:nix-community/NUR";
   };
