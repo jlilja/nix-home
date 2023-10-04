@@ -1,0 +1,3 @@
+repository:
+  name: "nix-home"
+  description: "Customize my home userspace using declarative language nix and Home Manager."
