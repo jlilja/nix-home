@@ -1,14 +1,16 @@
 { config, pkgs, ... }:
 
+let
+  nixgl = "${pkgs.nixgl.nixGLIntel}/bin/nixGLIntel";
+in
 {
   home.packages = with pkgs; [
     (writeShellScriptBin "blender" ''
-      ${nixgl.nixGLIntel}/bin/nixGLIntel ${blender}/bin/blender
+      ${nixgl} ${blender}/bin/blender "$@"
     '')
 
-
     # (writeShellScriptBin "globalprotect" ''
-    #   ${nixgl.nixGLIntel}/bin/nixGLIntel ${globalprotect-openconnect}/bin/gpclient
+    #   ${nixgl} ${globalprotect-openconnect}/bin/gpclient "$@"
     # '')
   ];
 }
