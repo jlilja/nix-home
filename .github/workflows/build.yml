@@ -17,4 +17,4 @@ jobs:
       with:
         nix_path: nixpkgs=channel:nixos-stable
 
-    - run: nix-build
+    - run: nix build
