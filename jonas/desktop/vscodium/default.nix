@@ -39,7 +39,9 @@
       ansible.ansible.path = "${pkgs.ansible}/bin/ansible";
     };
 
-    keybindings = with builtins; fromJSON (readFile ./keybindings.json);
+    keybindings = with builtins; fromJSON (
+      readFile ./keybindings.json
+    );
 
     mutableExtensionsDir = false;
 
