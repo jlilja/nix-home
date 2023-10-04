@@ -39,6 +39,8 @@
       ansible.ansible.path = "${pkgs.ansible}/bin/ansible";
     };
 
+    keybindings = with builtins; fromJSON (readFile ./keybindings.json);
+
     mutableExtensionsDir = false;
 
     extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace (
