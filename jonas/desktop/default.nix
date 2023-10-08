@@ -27,11 +27,21 @@
     slack
     # telegram-desktop
     teams-for-linux # Open-Source teams electron app https://github.com/IsmaelMartinez/teams-for-linux
+
+    # gaming
+    # lutris
+    # wine # Needs wine32 patching. See more on readme.md
+    # winetricks
+
+    # vulkan-headers
+    # vulkan-loader
+    # vulkan-tools
   ];
 
   home = {
     sessionVariables = {
       SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
+      WINEARCH = "win32";
     };
   };
 

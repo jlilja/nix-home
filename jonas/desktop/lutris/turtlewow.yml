@@ -1,0 +1,60 @@
+description: ''
+game_slug: turtlewow
+gogslug: ''
+humblestoreid: ''
+installer_slug: turtle-wow-117
+name: Turtle WoW
+notes: If the Installer no longer works the script will need the url updated to the
+  newest launcher version from TurtleWoW website.
+runner: wine
+script:
+  files:
+  - file1: https://turtle-wow.b-cdn.net/twmoa_1170.zip
+  game:
+    arch: win32
+    exe: drive_c/Program Files (x86)/turtle_client_117/WoW.exe
+    prefix: $GAMEDIR
+  installer:
+  - extract:
+      dst: $GAMEDIR/drive_c/Program Files (x86)/turtle_client_117
+      file: $file1
+  - task:
+      arch: win32
+      description: Creating 64bit Wine prefix.
+      name: create_prefix
+      prefix: $GAMEDIR
+  # - task:
+  #     app: arial
+  #     arch: win64
+  #     description: Installing Arial font
+  #     name: winetricks
+  #     prefix: $GAMEDIR
+  - task:
+      arch: win32
+      description: 'Wine Staging: Enabling DXVA2'
+      key: backend
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine\DXVA2
+      prefix: $GAMEDIR
+      value: va
+  - task:
+      name: winekill
+      prefix: $GAMEDIR
+  - task:
+      name: winekill
+      prefix: $GAMEDIR
+  system:
+    env:
+      DXVK_HUD: compiler
+      DXVK_STATE_CACHE_PATH: $GAMEDIR
+      STAGING_SHARED_MEMORY: 1
+      __GL_SHADER_DISK_CACHE: 1
+      __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
+  wine:
+    overrides:
+      nvapi: disabled
+      nvapi64: disabled
+slug: turtle-wow-117
+steamid: null
+version: '1.17'
+year: 2018
