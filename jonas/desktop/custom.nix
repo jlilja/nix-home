@@ -9,6 +9,10 @@ in
       ${nixgl} ${blender}/bin/blender "$@"
     '')
 
+    (writeShellScriptBin "calibre" ''
+      ${nixgl} ${calibre}/bin/calibre "$@"
+    '')
+
     # (writeShellScriptBin "globalprotect" ''
     #   ${nixgl} ${globalprotect-openconnect}/bin/gpclient "$@"
     # '')
