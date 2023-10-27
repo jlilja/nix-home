@@ -15,7 +15,7 @@
     vlc
 
     # Networking
-    postman
+    # postman
 
     # Productivity
     timeshift # https://github.com/linuxmint/timeshift
