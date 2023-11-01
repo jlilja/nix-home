@@ -55,6 +55,7 @@
           onepassword-password-manager # https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager
           multi-account-containers # https://github.com/mozilla/multi-account-containers | https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers
           user-agent-string-switcher # https://github.com/ray-lothian/UserAgent-Switcher | https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher
+          consent-o-matic # https://github.com/cavi-au/Consent-O-Matic | https://addons.mozilla.org/en-US/firefox/addon/consent-o-matic
         ];
       };
     };

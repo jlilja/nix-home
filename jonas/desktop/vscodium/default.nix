@@ -13,6 +13,10 @@
         trimTrailingWhitespace = true;
       };
 
+      workbench = {
+        startupEditor = "None";
+      };
+
       editor.mouseWheelZoom = true;
 
       extensions = {
