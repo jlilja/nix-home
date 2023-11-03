@@ -40,7 +40,11 @@
       };
 
       terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";
-      ansible.ansible.path = "${pkgs.ansible}/bin/ansible";
+
+      ansible = {
+        ansible.path = "${pkgs.ansible}/bin/ansible";
+        python.interpreterPath = "${pkgs.python3}/bin";
+      };
     };
 
     keybindings = with builtins; fromJSON (
