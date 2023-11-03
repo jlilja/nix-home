@@ -11,14 +11,24 @@
   ];
 
   home.packages = with pkgs; [
-    # Infrastructure
+    # Infrastructure as code
     terraform
     terragrunt
-    ansible
+
+    # Automation / configuration as code
     packer
+    ansible
+
+    # Docker
     dive # https://github.com/wagoodman/dive
     trivy # https://github.com/aquasecurity/trivy
+
+    # K8s
     kubectl
+
+    # Linting
+    yamllint
+    ansible-lint
 
     # Programming
     nodejs-16_x
@@ -28,8 +38,6 @@
     go-task
     jq
     yq-go
-    yamllint
-    git-open
 
     # Virtualisation
     qemu
@@ -44,6 +52,7 @@
     neofetch
     awscli2
 
+    # Misc
     yt-dlp
   ];
 }
