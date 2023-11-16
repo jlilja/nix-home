@@ -35,6 +35,27 @@
     };
   };
 
+  gtk = {
+    enable = true;
+
+    # This will not set the theme either. But if I want to install
+    # a non-standard theme then this would be the place.
+    # theme = {
+    #   package = pkgs.gnome.gnome-themes-extra;
+    #   name = "Adwaita-dark";
+    # };
+  };
+
+  # Might need this. Keeping it, like a hoarder.
+  # qt = {
+  #   enable = true;
+  #   platformTheme = "gtk";
+  #   style.name = "adwaita-gtk";
+  # };
+
+  # This will force the theme, but it will not update the appearence list in xfce.
+  home.sessionVariables.GTK_THEME = "Adwaita-dark";
+
   # This one will magically let rofi know of good XDG paths where applications live.
   targets.genericLinux.enable = true; # Boolean | https://rycee.gitlab.io/home-manager/options.html#opt-targets.genericLinux.enable
 }
