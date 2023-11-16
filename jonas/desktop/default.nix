@@ -31,7 +31,8 @@
 
   home = {
     sessionVariables = {
-      SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
+      SSH_AUTH_SOCK = "$HOME/.1password/agent.sock"; # Tell SSH to use 1pass as its ssh agent.
+      GTK_THEME = "Adwaita-dark"; # Override the GTK setting of that theme to display. Feels a bit dirty.
     };
   };
 
@@ -52,9 +53,6 @@
   #   platformTheme = "gtk";
   #   style.name = "adwaita-gtk";
   # };
-
-  # This will force the theme, but it will not update the appearence list in xfce.
-  home.sessionVariables.GTK_THEME = "Adwaita-dark";
 
   # This one will magically let rofi know of good XDG paths where applications live.
   targets.genericLinux.enable = true; # Boolean | https://rycee.gitlab.io/home-manager/options.html#opt-targets.genericLinux.enable
