@@ -17,6 +17,7 @@
         settings = {
           "browser.aboutConfig.showWarning" = false; # Boolean | To show warning prompt when accessing about:config page.
           "browser.startup.homepage" = "https://ddg.co"; # String | Setting homepage for Firefox.
+          "browser.sessionstore.resume_session_once" = true;
 
           "datareporting.healthreport.service.enabled" = false; # Boolean | Setting Firefox Health Report functionality (https://wiki.mozilla.org/Firefox_Health_Report)
           "datareporting.healthreport.uploadEnabled" = false; # Boolean | Setting Firefox Health Report uploading functionality.

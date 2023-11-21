@@ -29,6 +29,7 @@
     # Linting
     yamllint
     ansible-lint
+    shellcheck
 
     # Programming
     nodejs-16_x
