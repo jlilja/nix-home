@@ -22,6 +22,10 @@
     timeshift # https://github.com/linuxmint/timeshift
     hugo
 
+    # Secrets
+    _1password
+    _1password-gui
+
     # Chat apps
     discord
     signal-desktop

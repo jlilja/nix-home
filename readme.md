@@ -26,7 +26,6 @@ Nix configuration with home manager.
 * Docker - Fedora installer https://docs.docker.com/engine/install/fedora
 * Wine 32 bit prefix
 * Nerd fonts - https://github.com/ryanoasis/nerd-fonts
-* 1password - https://1password.com/downloads/linux
 * Lutris
 
 ### Setup
