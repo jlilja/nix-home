@@ -30,6 +30,15 @@ in
     sha256 = "sha256-vQ23xcZqm7DwkXLXHeQ9Rkk/JmlKw8ZPGcBafqTlD1g=";
   };
 
+  # UI for managing raid markings.
+  # https://github.com/webdkpthroaway/banana
+  home.file."${wowpath}/banana/".source = pkgs.fetchFromGitHub {
+    owner = "webdkpthroaway";
+    repo = "banana";
+    rev = "a0c1355";
+    sha256 = "sha256-5ZYe72bWN6thPZZhiTmea2lSsOXOxP4G2X3zNZjyIOA=";
+  };
+
   # Display better stats about character and what features it yields.
   # https://github.com/Lexiebean/BetterCharacterStats
   home.file."${wowpath}/BetterCharacterStats/".source = pkgs.fetchFromGitHub {

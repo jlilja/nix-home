@@ -32,7 +32,7 @@
     shellcheck
 
     # Programming
-    nodejs-16_x
+    # nodejs-16_x
     go
 
     # Utilities
