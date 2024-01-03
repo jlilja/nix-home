@@ -10,7 +10,7 @@
     settings.sudo.disabled = false;
 
     settings = {
-      command_timeout = 1000;
+      command_timeout = 2000;
     };
   };
 }
