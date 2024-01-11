@@ -43,6 +43,10 @@
     # Virtualisation
     qemu
 
+    # AWS
+    awscli2
+    # aws-sso-cli
+
     # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
@@ -51,7 +55,6 @@
     tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
-    awscli2
 
     # Misc
     yt-dlp
