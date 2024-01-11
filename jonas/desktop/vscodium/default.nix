@@ -17,7 +17,10 @@
         startupEditor = "None";
       };
 
-      editor.mouseWheelZoom = true;
+      editor = {
+        mouseWheelZoom = true;
+        formatOnSave = true;
+      };
 
       extensions = {
         autoCheckUpdates = false;
@@ -40,6 +43,15 @@
       };
 
       terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";
+      "[terraform]" = {
+        editor = {
+          defaultFormatter = "hashicorp.terraform";
+          formatOnSave = false;
+          codeActionsOnSave = {
+            "source.formatAll.terraform" = true;
+          };
+        };
+      };
 
       ansible = {
         ansible.path = "${pkgs.ansible}/bin/ansible";
