@@ -48,7 +48,7 @@
           formatOnSave = false;
         };
         "editor.codeActionsOnSave" = {
-            "source.formatAll.terraform" = "explicit";
+          "source.formatAll.terraform" = "explicit";
         };
       };
 
