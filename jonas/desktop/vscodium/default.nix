@@ -31,8 +31,6 @@
       redhat.telemetry.enabled = false;
       gitlens.telemetry.enabled = false;
 
-      "[yaml]".editor.defaultFormatter = "redhat.vscode-yaml";
-
       vim = {
         enableNeovim = true;
         useSystemClipboard = true;
@@ -42,16 +40,19 @@
         useCtrlKeys = false;
       };
 
-      terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";
+      "[yaml]".editor.defaultFormatter = "redhat.vscode-yaml";
+
       "[terraform]" = {
         editor = {
           defaultFormatter = "hashicorp.terraform";
           formatOnSave = false;
-          codeActionsOnSave = {
-            "source.formatAll.terraform" = true;
-          };
+        };
+        "editor.codeActionsOnSave" = {
+          "source.formatAll.terraform" = "explicit";
         };
       };
+
+      terraform.languageServer.path = "${pkgs.terraform-ls}/bin/terraform-ls";
 
       ansible = {
         ansible.path = "${pkgs.ansible}/bin/ansible";
