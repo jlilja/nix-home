@@ -26,8 +26,8 @@ in
   home.file."${wowpath}/AtlasLoot/".source = pkgs.fetchFromGitHub {
     owner = "Lexiebean";
     repo = "AtlasLoot";
-    rev = "845bd54";
-    sha256 = "sha256-vQ23xcZqm7DwkXLXHeQ9Rkk/JmlKw8ZPGcBafqTlD1g=";
+    rev = "fd2c1f7";
+    sha256 = "sha256-V4U6WtWmU4KV0Y5n0IjV35sRpt6x2fuKrK4EXVEoETk=";
   };
 
   # UI for managing raid markings.
@@ -95,12 +95,12 @@ in
   };
 
   # Questing assistance tool. Vanilla wow specific.
-  # https://github.com/shagu/pfQuest-turtle
+  # https://github.com/shagu/pfQuest
   home.file."${wowpath}/pfQuest/".source = pkgs.fetchFromGitHub {
     owner = "shagu";
     repo = "pfQuest";
-    rev = "e463c2f";
-    sha256 = "sha256-J3xxpJuZE3qJY3/o8/npFmK0UKNe5txlBBcEwu2c6as=";
+    rev = "81543cc";
+    sha256 = "sha256-f5aq6giep2+/M8Mme9AoJ/XpE+z5YnxShIRr1nG8AL0=";
   };
 
   # Questing assistance tool. Turtle wow specific.
@@ -108,8 +108,8 @@ in
   home.file."${wowpath}/pfQuest-turtle/".source = pkgs.fetchFromGitHub {
     owner = "shagu";
     repo = "pfQuest-turtle";
-    rev = "e311e76";
-    sha256 = "sha256-VRfwERKaO8N2WBAyltwiiY4vu2KhU44lSnTZO74Oukw=";
+    rev = "fa3a115";
+    sha256 = "sha256-CEzZPfROCWZpuihPEWEtSfCFOsSLfyHmUXE5ZOxDioU=";
   };
 
   # UI framework.
@@ -117,8 +117,8 @@ in
   home.file."${wowpath}/pfUI/".source = pkgs.fetchFromGitHub {
     owner = "shagu";
     repo = "pfUI";
-    rev = "145f725";
-    sha256 = "sha256-0vtEDKz0351oFI0vTHUhC6l6jtgPT4zPAC/dEH2Q3rY=";
+    rev = "4afd60f";
+    sha256 = "sha256-O6vn0+eWLO0x/h8udoR8KFZ0VEBnAAzmWiecmEs+I6g=";
   };
 
   # Buffing helper for raids.
@@ -126,8 +126,8 @@ in
   home.file."${wowpath}/rabuffs/".source = pkgs.fetchFromGitHub {
     owner = "melbaa";
     repo = "rabuffs";
-    rev = "d8c8de9";
-    sha256 = "sha256-HzQm7cER98PaJICj8Um+6xpt0UZ5PrYnNJxoRYZVlsE=";
+    rev = "65b8ca1";
+    sha256 = "sha256-59V5745hy+Kj1xmOPJILQnJCyT10BcH7ziwg/YHzIUg=";
   };
 
   # UI for EPGP looting points.
