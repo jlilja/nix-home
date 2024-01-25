@@ -10,6 +10,7 @@
       text = builtins.toJSON {
         scroll_past_end = true;
         update_check = false;
+        ensure_newline_at_eof_on_save = true;
       };
     };
 

@@ -32,8 +32,8 @@
     shellcheck
 
     # Programming
-    # nodejs-16_x
     go
+    nodejs_20
 
     # Utilities
     go-task
