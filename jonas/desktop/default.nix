@@ -26,6 +26,8 @@
     _1password
     _1password-gui
 
+    jetbrains.goland
+
     # Chat apps
     discord
     signal-desktop
