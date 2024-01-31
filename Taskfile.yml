@@ -1,7 +1,6 @@
 version: "3"
 
 tasks:
-
   hm-switch:
     cmds:
       - home-manager switch --flake .
@@ -25,3 +24,7 @@ tasks:
   format:
     cmds:
       - nix fmt
+
+  clean-older-generations:
+    cmds:
+      - nix-collect-garbage -d
