@@ -30,7 +30,9 @@
         in_process_packages = [ ];
         installed_packages = [
           "Package Control"
+
           "Pretty JSON"
+          "JSON Stringify"
 
           "Theme - Afterglow"
         ];
