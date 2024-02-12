@@ -12,6 +12,7 @@
 
     shellAliases = {
       fuckdocker = "docker system prune";
+      fuckdockeralittle = "docker builder prune";
       vim = "nvim";
       whichrepo = "gh repo view --web";
       whereami = "aws iam list-account-aliases | jq -r '.AccountAliases[0]'";

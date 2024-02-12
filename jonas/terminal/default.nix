@@ -45,6 +45,7 @@
 
     # AWS
     awscli2
+    aws-sam-cli
     # aws-sso-cli
 
     # CLI
