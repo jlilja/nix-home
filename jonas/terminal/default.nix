@@ -51,11 +51,14 @@
     # CLI
     zsh
     nix # Fix for nix to make sure it gets added to $PATH when zsh isn't the the initial shell.
-    gping
-    htop
     tealdeer # https://github.com/dbrgn/tealdeer
     screenkey # https://gitlab.com/screenkey/screenkey
     neofetch
+
+    # CLI alternative tools to standard unix tools
+    gping # Graphical representation of pinging instead of "ping"
+    htop # "Top" tool with pretty colors and some nicer representation of per core usage
+    bat # Like "cat", but it has syntax highlighting
 
     # Misc
     yt-dlp
