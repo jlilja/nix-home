@@ -15,7 +15,7 @@
         "name": "terraform",
         "publisher": "HashiCorp",
         "version": "2.29.2024012316",
-        "sha256": "sha256-g8Q+9I51J0H0V4ogWHPXTcQaM829E6g/tYrJCXSJScQ="
+        "sha256": "sha256-9dR8leUJCbAPSMWjgSDYuh9PrDCXEmy+qrOiYnQj/qo="
     },
     {
         "name": "hcl",
