@@ -8,14 +8,14 @@
     {
         "name": "ansible",
         "publisher": "redhat",
-        "version": "2.10.130",
-        "sha256": "sha256-Ddjc70ZgJs+qKb6qwVrde4VJJ15/mwHu+9TTCJ4E+bY="
+        "version": "2.13.148",
+        "sha256": "sha256-B4+6NSTyD1qZjhEuzsvg95dHH2lQov97igdXRKaet6I="
     },
     {
         "name": "terraform",
         "publisher": "HashiCorp",
-        "version": "2.29.2024012316",
-        "sha256": "sha256-9dR8leUJCbAPSMWjgSDYuh9PrDCXEmy+qrOiYnQj/qo="
+        "version": "2.30.2024022914",
+        "sha256": "sha256-HkLMSpI/xgcHTJyZrOPzuTyFwaDXi7f4xKYnI7f/WGU="
     },
     {
         "name": "hcl",
@@ -32,14 +32,14 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2024.1.3104",
-        "sha256": "sha256-gH/QNHsJi+rN6MlymV6gTHGQ0E/UfkbWWViy2Rf6PnA="
+        "version": "2024.3.904",
+        "sha256": "sha256-qkZWF9qM/SxQRMZQYsEYcW9ekfkGprXdKjlNu0g1X/Q="
     },
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2023.25.10292213",
-        "sha256": "sha256-XieEhBQ2+Thp9TZbt71i7KbPurnIFzian9SKfgcUKCc="
+        "version": "2024.3.10681011",
+        "sha256": "sha256-EvqTxH4CCO8fiLMqTlL8fDDXtatg1W+xKUJUXNAVqFM="
     },
     {
         "name": "vim",
