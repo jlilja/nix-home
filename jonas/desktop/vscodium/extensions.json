@@ -32,14 +32,14 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2024.3.904",
-        "sha256": "sha256-qkZWF9qM/SxQRMZQYsEYcW9ekfkGprXdKjlNu0g1X/Q="
+        "version": "2024.3.2605",
+        "sha256": "sha256-Jxp4bDevK96i41jnSEhuG1ssWijzArbb0djL1xjTvwM="
     },
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2024.3.10681011",
-        "sha256": "sha256-EvqTxH4CCO8fiLMqTlL8fDDXtatg1W+xKUJUXNAVqFM="
+        "version": "2024.3.10861011",
+        "sha256": "sha256-eXTsq9eiLYqIrmN7Cgzgdv0sK9R1pRnUsCi8xZ6gBfI="
     },
     {
         "name": "vim",
