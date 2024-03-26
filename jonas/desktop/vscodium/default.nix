@@ -29,7 +29,11 @@
 
       telemetry.telemetryLevel = "off";
       redhat.telemetry.enabled = false;
-      gitlens.telemetry.enabled = false;
+
+      gitlens = {
+        telemetry.enabled = false;
+        codeLens.enabled = false;
+      };
 
       vim = {
         enableNeovim = true;
@@ -58,6 +62,7 @@
         ansible.path = "${pkgs.ansible}/bin/ansible";
         python.interpreterPath = "${pkgs.python3}/bin";
       };
+
     };
 
     keybindings = with builtins; fromJSON (
