@@ -15,9 +15,6 @@
     spotify # https://www.spotify.com/us/download/linux
     vlc
 
-    # Networking
-    # postman
-
     # Productivity
     timeshift # https://github.com/linuxmint/timeshift
     hugo
@@ -26,7 +23,12 @@
     _1password
     _1password-gui
 
+    # IDEs
     jetbrains.goland
+
+    # secops
+    zap
+    postman
 
     # Chat apps
     discord
