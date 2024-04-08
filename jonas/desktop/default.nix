@@ -29,6 +29,8 @@
     # secops
     zap
     postman
+    metasploit
+    wpscan
 
     # Chat apps
     discord
