@@ -26,11 +26,16 @@
     # IDEs
     jetbrains.goland
 
+    # Network
+    openvpn
+
     # secops
     zap
     postman
     metasploit
     wpscan
+    sqlmap
+    burpsuite
 
     # Chat apps
     discord
