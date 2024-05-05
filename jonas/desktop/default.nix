@@ -31,6 +31,9 @@
     postman
     metasploit
     wpscan
+    openvpn
+    sqlmap
+    burpsuite
 
     # Chat apps
     discord
