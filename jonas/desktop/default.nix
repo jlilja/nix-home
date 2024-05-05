@@ -26,12 +26,14 @@
     # IDEs
     jetbrains.goland
 
+    # Network
+    openvpn
+
     # secops
     zap
     postman
     metasploit
     wpscan
-    openvpn
     sqlmap
     burpsuite
 
