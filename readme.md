@@ -34,6 +34,7 @@ _For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/
 
 * Updating sudoers file for zsh to patch $PATH.
 * US and SE keyboards with switching through keybindings.
+* Rofi autostart and trigger keybindings.
 
 ## Further reading
 
