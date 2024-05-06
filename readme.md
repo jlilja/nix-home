@@ -4,22 +4,17 @@ Nix configuration with home manager.
 
 ## New install on Linux
 
-_For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/quick-docs/selinux-changing-states-and-modes) first, otherwise there'll be conflicts with Systemd._
+_For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/quick-docs/selinux-changing-states-and-modes/#_disabling_selinux) first, otherwise there'll be conflicts with Systemd._
 
 1. `sh <(curl -L https://nixos.org/nix/install) --daemon`
 2. Verify being able to run `nix-instantiate '<nixpkgs>' -A hello` without root.
 3. `nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager`
 4. `nix-channel --update`
-
-```
-    cat <<EOF >> /etc/nix/nix.conf
-    experimental-features = nix-command flakes
-    EOF
-```
-
-5. Re-evaluate the session (log out & log in).
-6. Clone this repo in `$HOME/.config/home-manager`.
-7. `home-manager switch --flake .`
+5. `nix-shell '<home-manager>' -A install`
+6. Add `experimental-features = nix-command flakes` to `~/.config/nix/nix.conf`.
+7. Re-evaluate the session (log out & log in).
+8. Clone this repo in `$HOME/.config/home-manager`.
+9. `home-manager switch --flake .`
 
 ## What's not in nix
 
