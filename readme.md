@@ -24,12 +24,16 @@ _For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/
 * Wine 32 bit prefix
 * Nerd fonts - https://github.com/ryanoasis/nerd-fonts
 * Lutris
+* Steam - https://docs.fedoraproject.org/en-US/gaming/proton/
 
-### Setup
+### Manual setups
 
 * Updating sudoers file for zsh to patch $PATH.
 * US and SE keyboards with switching through keybindings.
-* Rofi autostart and trigger keybindings.
+* Rofi trigger keybindings (l-ctrl + space).
+* Add zsh via nix to /etc/shells and make it default.
+    - `echo $(which zsh) | sudo tee -a /etc/shells`
+    - `chsh`
 
 ## Further reading
 
