@@ -50,12 +50,12 @@ in
 
   # Raid events warning emitter addon.
   # https://github.com/Lexiebean/BigWigs
-  home.file."${wowpath}/BigWigs/".source = pkgs.fetchFromGitHub {
-    owner = "Lexiebean";
-    repo = "BigWigs";
-    rev = "ac60834";
-    sha256 = "sha256-61zfE3TGYjy5VcRVvziOLZMgygRbJonpuCBV8ECX78E=";
-  };
+  # home.file."${wowpath}/BigWigs/".source = pkgs.fetchFromGitHub {
+  #   owner = "Lexiebean";
+  #   repo = "BigWigs";
+  #   rev = "ac60834";
+  #   sha256 = "sha256-61zfE3TGYjy5VcRVvziOLZMgygRbJonpuCBV8ECX78E=";
+  # };
 
   # Raid events warning emitter addon for CThun boss.
   # https://github.com/0ldi/CThunWarner
