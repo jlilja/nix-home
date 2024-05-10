@@ -34,6 +34,8 @@ _For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/
 * Add zsh via nix to /etc/shells and make it default.
     - `echo $(which zsh) | sudo tee -a /etc/shells`
     - `chsh`
+* Disable xfce4-panel at startup (uses polybar instead).
+* Add polybar at startup
 
 ## Further reading
 
