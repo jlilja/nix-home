@@ -2,22 +2,19 @@
 
 Nix configuration with home manager.
 
-## New install
+## New install on Linux
 
-1. `sh <(curl -L https://nixos.org/nix/install)`
-2. `nix-env --version`
-3. `mkdir -p ~/.config/nix`
-4. Enable flakes for nix.
+_For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/quick-docs/selinux-changing-states-and-modes/#_disabling_selinux) first, otherwise there'll be conflicts with Systemd._
 
-```
-    cat <<EOF >> /etc/nix/nix.conf
-    experimental-features = nix-command flakes
-    EOF
-```
-
-5. Re-evaluate the session (log out & log in).
-6. Clone this repo in `$HOME/.config/home-manager`.
-7. `home-manager switch --flake .`
+1. `sh <(curl -L https://nixos.org/nix/install) --daemon`
+2. Verify being able to run `nix-instantiate '<nixpkgs>' -A hello` without root.
+3. `nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager`
+4. `nix-channel --update`
+5. `nix-shell '<home-manager>' -A install`
+6. Add `experimental-features = nix-command flakes` to `~/.config/nix/nix.conf`.
+7. Re-evaluate the session (log out & log in).
+8. Clone this repo in `$HOME/.config/home-manager`.
+9. `home-manager switch --flake .`
 
 ## What's not in nix
 
@@ -27,11 +24,16 @@ Nix configuration with home manager.
 * Wine 32 bit prefix
 * Nerd fonts - https://github.com/ryanoasis/nerd-fonts
 * Lutris
+* Steam - https://docs.fedoraproject.org/en-US/gaming/proton/
 
-### Setup
+### Manual setups
 
 * Updating sudoers file for zsh to patch $PATH.
 * US and SE keyboards with switching through keybindings.
+* Rofi trigger keybindings (l-ctrl + space).
+* Add zsh via nix to /etc/shells and make it default.
+    - `echo $(which zsh) | sudo tee -a /etc/shells`
+    - `chsh`
 
 ## Further reading
 
