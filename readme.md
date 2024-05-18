@@ -28,14 +28,13 @@ _For installs on Fedora, [disable SELinux](https://docs.fedoraproject.org/en-US/
 
 ### Manual setups
 
-* Updating sudoers file for zsh to patch $PATH.
 * US and SE keyboards with switching through keybindings.
 * Rofi trigger keybindings (l-ctrl + space).
 * Add zsh via nix to /etc/shells and make it default.
     - `echo $(which zsh) | sudo tee -a /etc/shells`
     - `chsh`
-* Disable xfce4-panel at startup (uses polybar instead).
-* Add polybar at startup
+* Disable xfce4-panel at startup (uses polybar instead). `sudo dnf remove xfce4-panel`
+* Add polybar at startup.
 
 ## Further reading
 
