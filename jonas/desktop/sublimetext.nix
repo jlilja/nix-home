@@ -13,7 +13,7 @@
         update_check = false;
         ensure_newline_at_eof_on_save = true;
         theme = "Afterglow.sublime-theme";
-        color_scheme                      = "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme";
+        color_scheme = "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme";
       };
     };
 
