@@ -43,6 +43,9 @@
     # Virtualisation
     qemu
 
+    # Secops
+    nmap
+
     # AWS
     awscli2
     aws-sam-cli

@@ -29,6 +29,9 @@
     # Network
     openvpn
 
+    # UI
+    polybar
+
     # secops
     zap
     postman
