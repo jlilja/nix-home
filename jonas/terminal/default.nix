@@ -36,6 +36,7 @@
     nodejs_20
 
     # Utilities
+    gnumake42
     go-task
     jq
     yq-go
