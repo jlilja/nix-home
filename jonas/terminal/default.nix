@@ -12,8 +12,7 @@
 
   home.packages = with pkgs; [
     # Infrastructure as code
-    terraform
-    terragrunt
+    tenv
 
     # Automation / configuration as code
     packer
