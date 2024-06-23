@@ -36,6 +36,7 @@
 
     # Utilities
     go-task
+    gnumake42
     jq
     yq-go
 
