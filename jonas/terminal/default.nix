@@ -15,7 +15,6 @@
     tenv
 
     # Automation / configuration as code
-    packer
     ansible
 
     # Docker
@@ -32,7 +31,6 @@
 
     # Programming
     go
-    nodejs_20
 
     # Utilities
     go-task
@@ -40,13 +38,8 @@
     jq
     yq-go
 
-    # Virtualisation
-    qemu
-
     # AWS
     awscli2
-    aws-sam-cli
-    # aws-sso-cli
 
     # CLI
     zsh
