@@ -35,15 +35,6 @@
         codeLens.enabled = false;
       };
 
-      vim = {
-        enableNeovim = true;
-        useSystemClipboard = true;
-        neovimPath = "${pkgs.neovim}/bin/nvim";
-        ignorecase = true;
-        hlsearch = true;
-        useCtrlKeys = false;
-      };
-
       "[yaml]".editor.defaultFormatter = "redhat.vscode-yaml";
 
       "[terraform]" = {
