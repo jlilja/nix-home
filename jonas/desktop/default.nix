@@ -28,6 +28,7 @@
 
     # Network
     openvpn
+    nmap
 
     # secops
     zap
