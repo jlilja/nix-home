@@ -7,7 +7,7 @@
     ./rofi
     ./sublimetext.nix
     ./custom.nix
-    ./gaming/wow.nix
+    # ./gaming/wow.nix
   ];
 
   home.packages = with pkgs; [
