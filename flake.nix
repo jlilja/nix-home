@@ -38,7 +38,7 @@
         # https://nixos.wiki/wiki/Overlays
         # Overlay is basically used as a way to patch the pkgs with whatever we put in the overlays list.
         overlays = [
-          inputs.nur.overlay
+          inputs.nur.overlays.default
           inputs.nixGL.overlay
         ];
       });
