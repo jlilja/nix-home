@@ -11,12 +11,21 @@
 
         search = {
           force = true;
-          default = "DuckDuckGo";
+          default = "Startpage";
+
+          engines = {
+            "Startpage" = {
+              urls = [{ template = "https://www.startpage.com/rvd/search?query={searchTerms}&language=auto"; }];
+              iconUpdateURL = "https://www.startpage.com/sp/cdn/favicons/mobile/android-icon-192x192.png";
+              updateInterval = 24 * 60 * 60 * 1000; # every day
+              definedAliases = [ "@s" ];
+            };
+          };
         };
 
         settings = {
           "browser.aboutConfig.showWarning" = false; # Boolean | To show warning prompt when accessing about:config page.
-          "browser.startup.homepage" = "https://ddg.co"; # String | Setting homepage for Firefox.
+          "browser.startup.homepage" = "https://www.startpage.com/"; # String | Setting homepage for Firefox.
           "browser.sessionstore.resume_session_once" = true;
 
           "datareporting.healthreport.service.enabled" = false; # Boolean | Setting Firefox Health Report functionality (https://wiki.mozilla.org/Firefox_Health_Report)
