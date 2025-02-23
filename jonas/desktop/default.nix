@@ -20,7 +20,7 @@
     hugo
 
     # Secrets
-    _1password
+    _1password-cli
     _1password-gui
 
     # IDEs
