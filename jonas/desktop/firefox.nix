@@ -60,7 +60,7 @@
           "browser.tabs.firefox-view" = false;
         };
 
-        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
           ublock-origin # https://ublockorigin.com | https://addons.mozilla.org/en-US/firefox/addon/ublock-origin
           onepassword-password-manager # https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager
           multi-account-containers # https://github.com/mozilla/multi-account-containers | https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers

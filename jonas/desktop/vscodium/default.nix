@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  programs.vscode = {
+  programs.vscode.profiles = {
     enable = true;
 
     package = pkgs.vscodium;
