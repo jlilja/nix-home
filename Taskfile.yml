@@ -28,3 +28,9 @@ tasks:
   clean-older-generations:
     cmds:
       - nix-collect-garbage -d
+
+  dnf-install:
+    cmds:
+      - cmd: sudo dnf install {{ .ITEM }}
+        for:
+          - wireshark # Troublesome via nix/hm

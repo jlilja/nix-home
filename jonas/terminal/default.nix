@@ -16,6 +16,7 @@
 
     # Automation / configuration as code
     ansible
+    packer
 
     # Docker
     dive # https://github.com/wagoodman/dive
