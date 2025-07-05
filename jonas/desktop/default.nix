@@ -32,7 +32,6 @@
 
     # secops
     zap
-    postman
     metasploit
     wpscan
     sqlmap
