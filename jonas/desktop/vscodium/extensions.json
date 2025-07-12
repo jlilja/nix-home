@@ -2,26 +2,26 @@
     {
         "name": "vscode-yaml",
         "publisher": "redhat",
-        "version": "1.14.0",
-        "sha256": "sha256-hCRyDA6oZF7hJv0YmbNG3S2XPtNbyxX1j3qL1ixOnF8="
+        "version": "1.18.0",
+        "sha256": "sha256-UtxDplORUWqmiW6I8n4ZhK7HAQdSDG4dw7M/cbjkmZY="
     },
     {
         "name": "ansible",
         "publisher": "redhat",
-        "version": "24.4.1526292",
-        "sha256": "sha256-YULvbOpd4lHCyrwo1erTeX/AY5qqXF5lLJN8x8bLhyY="
+        "version": "25.7.0",
+        "sha256": "sha256-ou/5MHiTFopeHSyEAspppejcvWnIz2qM62yCpedNW6s="
     },
     {
         "name": "terraform",
         "publisher": "HashiCorp",
-        "version": "2.30.2024032714",
-        "sha256": "sha256-orzNwZGOb36IyqU41kQDnV1CZlzhiuTCrDrH1FyRMgg="
+        "version": "2.34.2025012311",
+        "sha256": "sha256-SmADVhgysDDvmI2/FZHoNWfgSrcxQfJTJj4ZgxOxjhc="
     },
     {
         "name": "hcl",
         "publisher": "HashiCorp",
-        "version": "0.3.2",
-        "sha256": "sha256-cxF3knYY29PvT3rkRS8SGxMn9vzt56wwBXpk2PqO0mo="
+        "version": "0.6.0",
+        "sha256": "sha256-Za2ODrsHR/y0X/FOhVEtbg6bNs439G6rlBHW84EZS60="
     },
     {
         "name": "nix",
@@ -32,13 +32,19 @@
     {
         "name": "gitlens",
         "publisher": "eamodio",
-        "version": "2024.4.405",
-        "sha256": "sha256-q9jD+ghBe7upITHOKm8LeFPkjde4+MB32EnLXYHGzVY="
+        "version": "2025.7.1205",
+        "sha256": "sha256-DGOS4bIz1/FLDUH87dAp098vB0CcZjFZ+K0eZ6YJbbs="
     },
     {
         "name": "python",
         "publisher": "ms-python",
-        "version": "2024.4.0",
-        "sha256": "sha256-3pq/oLQaRhhp+UJbfrrcpbxBpfrgZgsRc5BC6NMTIm0="
+        "version": "2025.10.0",
+        "sha256": "sha256-8dc1uM/6iUNF+9y4yKH7w4/FsrzgVoOJlIFfQOvY8YM="
+    },
+    {
+        "name": "toml",
+        "publisher": "be5invis",
+        "version": "0.6.0",
+        "sha256": "sha256-yk7buEyQIw6aiUizAm+sgalWxUibIuP9crhyBaOjC2E="
     }
 ]
