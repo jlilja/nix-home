@@ -22,7 +22,7 @@
 
     autosuggestion.enable = true;
 
-    initExtra = builtins.readFile ./zshrc;
+    initContent = builtins.readFile ./zshrc;
   };
 
   # https://github.com/junegunn/fzf
