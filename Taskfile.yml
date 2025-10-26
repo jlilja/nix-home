@@ -34,3 +34,8 @@ tasks:
       - cmd: sudo dnf install {{ .ITEM }}
         for:
           - wireshark # Troublesome via nix/hm
+
+          # Fixes for SMB drives on the network
+          - smbclient
+          - samba
+          - gvfs-smb
