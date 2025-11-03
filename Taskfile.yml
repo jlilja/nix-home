@@ -39,3 +39,7 @@ tasks:
           - smbclient
           - samba
           - gvfs-smb
+
+  nfs-mount-laptop:
+    cmds:
+      - sudo mount -t nfs 192.168.51.2:/volume1/video ~/synology
